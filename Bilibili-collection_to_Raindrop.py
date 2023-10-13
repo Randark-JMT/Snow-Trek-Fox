@@ -2,8 +2,8 @@ import json
 from raindropiopy import API, Collection, CollectionRef, Raindrop
 import requests
 
-
-Raindrop_api = API("892be2ec-cf85-4a2a-a1bd-51f9ba19140a")
+with open("./Raindrop-token.txt","r") as f:
+        Raindrop_api = API(f.read())
 Bilibili_collection_url = "https://api.bilibili.com/x/v3/fav/resource/list"
 Bilibili_collection_del_url = "https://api.bilibili.com/x/v3/fav/resource/batch-del"
 with open("./Bilibili-cookie.txt", "r") as f:
