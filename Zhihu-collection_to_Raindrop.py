@@ -1,5 +1,3 @@
-# 此脚本需要用户将收藏夹设为公开可见
-
 import requests
 from raindropiopy import API, Collection, Raindrop
 
